@@ -214,29 +214,27 @@ export default function App() {
           </div>
 
           {/* Desktop Navigation Items */}
-          <nav className="hidden lg:flex items-center space-x-8">
-            {[
-              { id: 'home', label: 'Home' },
-              { id: 'about', label: 'About Myself' },
-              { id: 'skills', label: 'Expertise' },
-              { id: 'projects', label: 'My Works' },
-              { id: 'certifications', label: 'Certificates' },
-              { id: 'contact', label: 'Contact' }
-            ].map(item => (
-              <button
-                key={item.id}
-                onClick={() => scrollToSection(item.id)}
-                className={`text-[13px] font-bold tracking-widest uppercase transition-all duration-300 relative py-2 ${
-                  activeSection === item.id ? 'text-[#4f8eff]' : 'text-slate-400 hover:text-white'
-                }`}
-              >
-                {item.label}
-                {activeSection === item.id && (
-                  <span className="absolute bottom-0 left-0 w-full h-[2px] bg-gradient-to-r from-[#4f8eff] to-[#a259ff] rounded-full" />
-                )}
-              </button>
-            ))}
-          </nav>
+      <nav className="hidden lg:flex items-center space-x-8">
+        {[
+          { id: 'home', label: 'Home' },
+          { id: 'about', label: 'About Myself' },
+          { id: 'skills', label: 'Expertise' },
+          { id: 'projects', label: 'My Works' },
+          { id: 'certifications', label: 'Certifications' },
+          { id: 'contact', label: 'Contact' },
+        ].map((item) => (
+          <button
+            key={item.id}
+            onClick={() => scrollToSection(item.id)}
+            className={"text-[13px] font-bold tracking-widest uppercase transition-all duration-300 relative py-2 " + (activeSection === item.id ? "text-[#4f8eff]" : "text-slate-400 hover:text-white")}
+          >
+            {item.label}
+            {activeSection === item.id && (
+              <span className="absolute bottom-0 left-0 w-full h-[2px] bg-gradient-to-r from-[#4f8eff] to-[#a259ff]" />
+            )}
+          </button>
+        ))}
+      </nav>
 
           {/* Download CV Actions */}
           <div className="hidden lg:block">
