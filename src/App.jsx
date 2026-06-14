@@ -191,10 +191,11 @@ export default function App() {
       </div>
 
       {/* Top Progress Bar */}
-      <div 
-        className="fixed top-0 left-0 h-[4px] bg-gradient-to-r from-[#4f8eff] to-[#a259ff] z-50 transition-all duration-100"
-        style={{ width: `${scrollProgress}%` }}
-      />
+<div 
+  className="fixed top-0 left-0 h-[4px] bg-gradient-to-r from-[#4f8eff] to-[#a259ff] z-50 transition-all duration-100"
+  style={{ width: `${scrollProgress}%` }}
+/>
+
 
       {/* HEADER & MENU */}
       <header className="fixed top-0 left-0 w-full z-40 bg-[#03020a]/80 backdrop-blur-2xl border-b border-slate-900/60 transition-all duration-300">
