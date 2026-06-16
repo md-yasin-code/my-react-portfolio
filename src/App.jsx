@@ -138,7 +138,7 @@ export default function App() {
       title: "Professional Resume Builder",
       category: "app",
       image: "https://images.unsplash.com/photo-1586281380349-632531db7ed4?auto=format&fit=crop&w=800&q=80",
-      description: "রিয়েল-টাইম লাইভ প্রিভিউ, ড্র্যাগ অ্যান্ড ড্রপ পজিশনিং এবং ওয়ান-ক্লিক পিডিএফ এক্সপোর্ট সহ প্রফেশনাল রিঅ্যাক্ট ওয়েব অ্যাপ্লিকেশন।",
+      description: "রিয়েল-টাইম লাইভ প্রিভিউ, ড্র্যাগ অ্যান্ড ড্রপ পজিশনিং এবং ওয়ান-ক্লিক পিডিএফ এক্সপোর্ট সহ প্রফেশনান রিঅ্যাক্ট ওয়েব অ্যাপ্লিকেশন।",
       subtitle: "Interactive Document Generator",
       overview: "ব্যবহারকারীরা বিভিন্ন প্রফেশনাল টেমপ্লেট ব্যবহার করে সহজেই নিজেদের সিভি বা রেজুমে তৈরি করতে পারবেন এবং ড্র্যাগ অ্যান্ড ড্রপ ফিচার দিয়ে ইচ্ছামতো সেকশন সাজাতে পারবেন।",
       features: [
@@ -347,7 +347,7 @@ export default function App() {
                 View My Works
               </button>
 
-              {/* Minimalist Tech Profiles */}
+              {/* Tech Profiles */}
               <div className="flex items-center space-x-3 pt-2 sm:pt-0 pl-0 sm:pl-4">
                 <a href="https://github.com/md-yasin-code" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 hover:text-white hover:border-[#4f8eff]/50 transition-all">
                   <Github className="w-4 h-4" />
@@ -359,13 +359,13 @@ export default function App() {
             </div>
           </div>
 
-          {/* Hero Premium Side Image with layer decorations */}
+          {/* Hero Side Image */}
           <div className="lg:col-span-5 flex justify-center relative">
             <div className="relative w-80 h-80 sm:w-[350px] sm:h-[450px]">
               
               {/* Back ambient glowing rings */}
               <div className="absolute inset-0 bg-gradient-to-tr from-[#4f8eff]/10 to-[#a259ff]/10 rounded-2xl blur-xl opacity-30 animate-pulse" />
-              <div className="absolute inset-0 border-2 border-[#4f8eff]/20 translate-x-4 translate-y-4 rounded-2xl -z-10 animate-pulse" />
+              <div className="absolute inset-0 border-2 border-[#4f8eff]/20 translate-x-4 translate-y-4 rounded-2xl -z-10" />
 
               {/* Main image container */}
               <div className="w-full h-full rounded-2xl overflow-hidden bg-slate-900 border border-slate-800 relative shadow-2xl">
@@ -924,7 +924,7 @@ export default function App() {
         </div>
       </footer>
 
-      {/* WHATSAPP FLOAT BUTTON WITH PULSE */}
+      {/* WHATSAPP FLOAT BUTTON */}
       <div className="fixed bottom-6 right-6 z-50 group flex items-center">
         <span className="bg-slate-950/90 text-[#22c55e] border border-[#22c55e]/25 text-xs font-semibold px-3 py-1.5 rounded-lg mr-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
           Chat on WhatsApp
